@@ -1,0 +1,56 @@
+// src/thankyou.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for your submission">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="thankyou.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="thankyou-container">
+        <div class="thankyou-card" role="region" aria-labelledby="thankyou-title">
+            <div class="icon-wrapper" aria-hidden="true">
+                <svg class="checkmark-icon" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                    <path class="checkmark-path" fill="none" d="m14.1 27.2 7.1 7.2 16.7-16.8"/>
+                </svg>
+            </div>
+            
+            <h1 id="thankyou-title" class="thankyou-title">Thank You!</h1>
+            
+            <p class="thankyou-description">
+                Your submission has been received successfully. We appreciate your time and effort, 
+                and we'll be in touch shortly with further updates.
+            </p>
+            
+            <div class="button-wrapper">
+                <a 
+                    href="index.html" 
+                    class="back-button" 
+                    id="backToHome"
+                    role="button"
+                    aria-label="Return to home page"
+                >
+                    <span class="button-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 12H5M12 19l-7-7 7-7"/>
+                        </svg>
+                    </span>
+                    <span class="button-text">Back to Home</span>
+                </a>
+            </div>
+            
+            <p class="redirect-notice" id="redirectNotice">
+                Redirecting to home in <span id="countdown">5</span> seconds...
+            </p>
+        </div>
+    </main>
+    
+    <script src="thankyou.js"></script>
+</body>
+</html>
