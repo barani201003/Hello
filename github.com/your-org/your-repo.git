@@ -1,0 +1,15 @@
+# Initialize git repo (if not already initialized)
+git init
+
+# Create and switch to the feature branch
+git checkout -b feature/bye-page
+
+# Add the files
+git add bye-page/
+
+# Commit with a descriptive message
+git commit -m "Add goodbye page with responsive design"
+
+# Add remote and push (adjust URL for your repository)
+git remote add origin https://github.com/your-org/your-repo.git
+git push -u origin feature/bye-page
